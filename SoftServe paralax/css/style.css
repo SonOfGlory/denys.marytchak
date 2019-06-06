@@ -1,0 +1,107 @@
+* {
+	margin:0;
+	padding:0;
+	border:0;
+	outline:0;
+	font-weight:inherit;
+	font-style:inherit;
+	font-size:100%;
+}
+
+html {
+	width: auto;
+	}
+
+body {
+	
+}
+
+#sky {
+	background: url('../images/sky.png') no-repeat;
+	min-height: 1080px;
+	width: 1920px;
+	position: absolute;
+	top:0
+	left:0;
+	overflow: hidden;
+}
+
+#backhouses {
+	background: url('../images/backhouses-0.png') no-repeat;
+	bottom: 4.5%;
+	left: 148px;
+	min-height: 556px;
+	position: absolute;
+	width: 1772px;
+}
+
+#backplan {
+	background: url('../images/backplan-1.png') no-repeat;
+	bottom: 4.5%;
+	left: 148px;
+	min-height: 556px;
+	position: absolute;
+	width: 1772px;
+}
+
+#boys {
+	background: url('../images/boys-2.png') no-repeat;
+	bottom: 9%;
+    left: 785px;
+    min-height: 333px;
+    position: absolute;
+    width: 286px;
+}
+
+#tree_shop_boy {
+	background: url('../images/tree_shop_boy-3.png') no-repeat;
+    left: 0;
+    min-height: 898px;
+    position: absolute;
+    top: 0;
+    width: 530px;
+}
+
+#big_tree {
+	background: url('../images/biggest_tree-4.png') no-repeat;
+    left: 234px;
+    min-height: 950px;
+    position: absolute;
+    top: 0;
+    width: 1863px;
+}
+
+#grandfa {
+	background: url('../images/grandfa-5.png') no-repeat;
+	bottom: 100px;
+    left: 390px;
+    min-height: 632px;
+    position: absolute;
+    width: 261px;
+}
+
+#ground {
+	background: url('../images/ground-6.png') no-repeat;
+    bottom: 0;
+    left: 0;
+    min-height: 251px;
+    position: absolute;
+    width: 1920px;
+}
+
+#girls {
+	background: url('../images/girls-7.png') no-repeat;
+    bottom: 50px;
+    min-height: 776px;
+    position: absolute;
+    left: 1150px; /*right: 129px;*/
+    width: 654px;
+}
+
+#dog {
+	background: url('../images/dog-8.png') no-repeat;
+ 	bottom: 0;
+    left: 280px;
+    min-height: 459px;
+    position: absolute;
+    width: 454px;

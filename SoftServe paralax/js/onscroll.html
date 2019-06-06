@@ -1,0 +1,48 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<script type="text/javascript">
+// Developed by Roshan Bhattarai
+// Visit http://roshanbh.com.np for this script and more.
+// This notice MUST stay intact for legal use
+window.onload = function()
+{
+//adding the event listerner for Mozilla
+if(window.addEventListener) document.addEventListener('DOMMouseScroll', moveObject, false);
+//for IE/OPERA etc
+document.onmousewheel = moveObject;
+}
+function moveObject(event)
+{
+var delta = 0;
+if (!event) event = window.event;
+// normalize the delta
+if (event.wheelDelta)
+{ delta = event.wheelDelta / 120; } // IE & Opera 
+else if (event.detail) // W3C
+{ delta = -event.detail / 3; }
+var currPos=document.getElementById('object').offsetTop;
+currPos=parseInt(currPos)+(delta*10);
+
+document.getElementById('object').style.top=currPos+"px";
+}
+</script>
+<style>
+#object
+{
+font-weight:bold;
+background:yellow;
+padding:5px;
+width:300px;
+position:absolute;
+left:500px;
+top:200px;
+}
+</style>
+<title>Example of moving object using mouse wheel scroll event using JavaScript</title></head>
+<body>
+<div align="center" style="font:bold 13px Verdana, Arial, Helvetica, sans-serif; color:#FF0000; ">Scrool the mouse wheel!! In each Wheel movement The object gets scrolled up or down by 10 pixels.</div>
+<div id="object">This block moves as you move mouse wheel.</div>
+</body>
+</html> 
